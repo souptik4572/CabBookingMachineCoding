@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FlipcartMachineCoding.iml" filepath="$PROJECT_DIR$/FlipcartMachineCoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CabBookingMachineCoding.iml" filepath="$PROJECT_DIR$/CabBookingMachineCoding.iml" />
     </modules>
   </component>
 </project>
