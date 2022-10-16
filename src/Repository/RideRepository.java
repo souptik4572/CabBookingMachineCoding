@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RideRepository {
+    // The ride repository is responsible for keeping track of all existing rides at a certain time
     private List<Ride> rides;
 
     public RideRepository() {

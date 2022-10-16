@@ -8,6 +8,7 @@ public class CabDriver {
     private String carNumber;
     private Location currentLocation;
 
+    // This boolean value denotes if the driver is available to take up any new ride, by default it's value is True.
     private Boolean isAvailable;
 
     public Boolean getIsAvailable() {

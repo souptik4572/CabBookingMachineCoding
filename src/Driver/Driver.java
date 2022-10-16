@@ -12,6 +12,11 @@ public class Driver {
 
 
     public static void main(String[] args) throws IOException {
+        // The Flow is as follows
+        // Step 1: Initialise all of the components
+        // Step 2: Sequentially call the operations
+        // Step 3: If rides are available for a given source location then it would just show a list of them otherwise it would show us a empty list which denotes that no rides are available
+        // Step 4: Once choosing the ride the ride would not be available for any next search
 
         CabPassenger cabPassenger1 = new CabPassenger("Abhishek", "Male", 23);
         CabPassenger cabPassenger2 = new CabPassenger("Rahul", "Male", 29);
@@ -45,6 +50,12 @@ public class Driver {
         RideRepository rideRepository = new RideRepository();
 
         System.out.println(rideService.findRides(
+                cabPassenger1,
+                new Location(0, 0),
+                new Location(20, 1),
+                cabDriverRepository));
+
+        System.out.println(rideService.findRides(
                 cabPassenger2,
                 new Location(10, 0),
                 new Location(15, 3),
@@ -53,6 +64,12 @@ public class Driver {
         rideService.chooseRide(cabPassenger2, cabDriver1, rideRepository);
 
         System.out.println("The list of available Drivers: " + cabDriverRepository.getCabDrivers().toString());
+
+        System.out.println(rideService.findRides(
+                cabPassenger1,
+                new Location(0, 0),
+                new Location(20, 1),
+                cabDriverRepository));
     }
 
 
